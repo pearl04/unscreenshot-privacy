@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unscreenshot Privacy Policy</title>
+<style>
+  :root { --bg: #fff; --fg: #1d1d1f; --muted: #5f6368; --line: #e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141414; --fg: #ececec; --muted: #a0a0a0; --line: #2c2c2c; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  section { border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Unscreenshot Privacy Policy</h1>
+  <p class="muted">Last updated: 7 November 2026</p>
+
+  <p>Unscreenshot is a Chrome extension that hides screenshots of X (Twitter) posts in your LinkedIn feed. It does all of its work inside your browser. It has no server, no analytics and no account, and it sends nothing to the developer.</p>
+
+  <section>
+    <h2>What it reads</h2>
+    <ul>
+      <li>It runs only on linkedin.com.</li>
+      <li>For each post image your browser is already showing, it downloads that same image from LinkedIn's image server (media.licdn.com) without sending your cookies. It then checks the image on your computer with text recognition that is bundled inside the extension.</li>
+      <li>It does not read your messages, profile, connections or post text, and it does not track what you browse.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What it stores</h2>
+    <ul>
+      <li><strong>On your computer:</strong> your settings (on/off, the hidden debug mode), a count of screenshots hidden today, and a cache of past results for each image so the same image is not checked twice.</li>
+      <li><strong>Your corrections:</strong> when you click "Hide X screenshot" or "Not a tweet", the extension saves a short fingerprint of that image (a short code computed from it, not the image itself) and your choice. This goes in Chrome sync storage, so your corrections follow you to other computers where you are signed in to Chrome. It travels through Google's Chrome sync, which is part of your own Google account. It is never sent to the developer.</li>
+      <li><strong>Debug mode (off by default):</strong> if you turn it on and click a "Tweet" or "Not a tweet" label button, that one image, the text read from it and its result are saved on your computer so you can export them to a file on your own device. Nothing is saved without that click.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What it shares</h2>
+    <p>Nothing. The extension does not sell, transfer or share any data with the developer or anyone else. Apart from the image downloads described above and Chrome's own sync of your corrections, it makes no network requests.</p>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <p>Uninstalling the extension deletes everything it stored on your computer. Synced corrections can be removed in Chrome settings under You and Google, then Sync.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions: use the Support tab on the extension's Chrome Web Store listing.</p>
+  </section>
+</main>
+</body>
+</html>
